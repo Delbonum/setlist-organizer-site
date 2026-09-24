@@ -32,7 +32,7 @@
 <!-- ======================================================================= -->
 <section id="de" lang="de">
 <h1>Datenschutzerklärung für die App „Setlist Organizer“</h1>
-<p class="meta">Stand: 19. September 2026</p>
+<p class="meta">Stand: 24. September 2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>
@@ -45,17 +45,19 @@
 
 <h2>2. Das Wichtigste in Kürze</h2>
 <ul>
-  <li>Die App hat <strong>kein Nutzerkonto und keinen eigenen Server</strong>. Deine Songs, Songtexte und Setlists werden ausschliesslich auf deinem Gerät gespeichert. Wir haben darauf keinen Zugriff.</li>
+  <li>Ohne dein Zutun gibt es <strong>kein Nutzerkonto</strong>, und deine Songs, Songtexte und Setlists bleiben <strong>ausschliesslich auf deinem Gerät</strong>. Wir haben darauf keinen Zugriff.</li>
+  <li>Nur wenn du den <strong>Abgleich zwischen Geräten</strong> (Premium) einschaltest, speichern wir deine Songs und Setlists auf unserem Server, damit sie auf deinen anderen Geräten und in der Web-App erscheinen. Du kannst dein Konto dort jederzeit löschen.</li>
   <li>In der <strong>kostenlosen Version</strong> zeigt die App Werbung über Google AdMob. Dabei verarbeitet Google Daten deines Geräts. Personalisierte Werbung gibt es nur mit deiner Einwilligung.</li>
   <li>Den <strong>Kauf von Premium</strong> wickelt Google Play ab. Zahlungsdaten erhalten wir nicht.</li>
   <li>Mit Premium wird die Werbe-Bibliothek nicht gestartet; es werden dann keine Daten für Werbung verarbeitet.</li>
 </ul>
 
-<h2>3. Daten, die nur auf deinem Gerät bleiben</h2>
+<h2>3. Daten auf deinem Gerät</h2>
 <p>
   Alles, was du in der App anlegst – Songs, Songtexte, Akkorde, Setlists, Markierungen –
   sowie deine Einstellungen (z. B. Sprache, Schriftgrösse) werden lokal auf deinem Gerät gespeichert.
-  Diese Daten werden von der App nicht an uns oder an Dritte übermittelt.
+  Diese Daten werden von der App nicht an uns oder an Dritte übermittelt – ausser du schaltest den
+  Abgleich zwischen Geräten ein (Abschnitt 4).
 </p>
 <h3>Dateien importieren und exportieren</h3>
 <p>
@@ -69,9 +71,83 @@
   Android kann App-Daten im Rahmen der automatischen Datensicherung in deinem Google-Konto sichern,
   sofern du diese Funktion in den Geräteeinstellungen aktiviert hast. Diese Sicherung erfolgt durch Google
   und ist für uns nicht einsehbar. Du kannst sie in den Android-Einstellungen unter „Google“ bzw. „Sicherung“ abschalten.
+  Die Zugangsdaten für den Abgleich zwischen Geräten sind von dieser Sicherung ausgenommen.
 </p>
 
-<h2>4. Werbung (Google AdMob) – nur in der kostenlosen Version</h2>
+<h2 id="abgleich">4. Abgleich zwischen Geräten (optional, Premium)</h2>
+<p>
+  Mit Premium kannst du unter <em>Mehr → Abgleich zwischen Geräten</em> einschalten, dass deine Songs und Setlists
+  auf deinen Geräten gleich bleiben – etwa auf Handy und Tablet – und dass du sie in unserer Web-App am Computer
+  bearbeiten kannst. Solange du den Abgleich nicht einschaltest, geschieht nichts von dem, was in diesem Abschnitt steht.
+</p>
+<h3>Welche Daten auf unseren Server gehen</h3>
+<ul>
+  <li><strong>Deine Inhalte:</strong> Songs (Titel, Künstler, Tonart, Tempo, Dauer, Songtext mit Akkorden, Autoscroll-Tempo),
+    Setlists (Name, Datum, Ort, Abschnitte, enthaltene Songs, Markierungen, Einstellungen der Auftrittsansicht) und die
+    Reihenfolge deiner Setlists – dazu je Eintrag, wann er zuletzt geändert wurde. Gelöschte Einträge bleiben als leerer
+    Vermerk (nur eine zufällige Kennung, kein Inhalt) stehen, damit deine anderen Geräte von der Löschung erfahren.
+    Der gespeicherte Zoom und die Textposition je Song bleiben auf dem jeweiligen Gerät.</li>
+  <li><strong>Deine Geräte:</strong> je verbundenem Gerät ein Name (z. B. „Xiaomi 2201116SG“ oder „Chrome auf Windows“),
+    die Plattform (Android oder Web), wann es verbunden wurde und wann es sich zuletzt gemeldet hat. Jedes Gerät erhält
+    einen zufälligen Zugangsschlüssel; auf dem Server liegt davon nur ein nicht umkehrbarer Hashwert.</li>
+  <li><strong>Mit Google angemeldet:</strong> die unveränderliche Kennung deines Google-Kontos und deine E-Mail-Adresse,
+    sofern Google sie bestätigt hat. Name, Profilbild oder sonstige Daten deines Google-Kontos erhalten und speichern wir nicht.</li>
+  <li><strong>Verbinden per QR-Code:</strong> ein zufälliger, fünf Minuten gültiger Code und der Name des neuen Geräts.
+    Beides wird gelöscht, sobald das Gerät verbunden ist; ein abgelaufener Code verfällt und wird bei nächster Gelegenheit gelöscht.</li>
+</ul>
+<p>
+  Die Übertragung ist verschlüsselt (HTTPS). Auf dem Server liegen die Daten jedoch <strong>nicht Ende-zu-Ende-verschlüsselt</strong>:
+  Technisch könnten wir als Betreiber sie einsehen. Wir tun das nicht, ausser du bittest uns ausdrücklich darum, etwa zur Fehlersuche.
+  Wir werten die Daten nicht aus, nutzen sie nicht für Werbung und geben sie nicht weiter.
+</p>
+<h3>Wo die Daten liegen: Cloudflare</h3>
+<p>
+  Server und Datenbank betreibt für uns <strong>Cloudflare, Inc.</strong>, 101 Townsend St., San Francisco, CA 94107, USA
+  („Cloudflare“), als Auftragsverarbeiter (Cloudflare Workers und D1). Die Datenbank liegt in einem Rechenzentrum in Europa;
+  Anfragen laufen über das weltweite Netz von Cloudflare, das dabei deine IP-Adresse verarbeitet, um die Verbindung
+  herzustellen und Angriffe abzuwehren. Eigene Zugriffsprotokolle führen wir nicht. Cloudflare ist unter dem EU-US Data Privacy
+  Framework (und dessen Schweizer Erweiterung) zertifiziert. Weitere Informationen:
+  <a href="https://www.cloudflare.com/privacypolicy/">Datenschutzerklärung von Cloudflare</a>.
+</p>
+<h3>Anmelden mit Google</h3>
+<p>
+  Wenn du „Mit Google anmelden“ wählst, zeigt Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland)
+  die Kontoauswahl an und übermittelt uns nach deiner Bestätigung eine signierte Bestätigung mit den oben genannten Angaben.
+  In der Web-App lädt die Anmeldeseite dafür ein Skript von Google; dabei erhält Google technische Daten wie deine IP-Adresse.
+  Es gilt die <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.
+</p>
+<h3>Web-App</h3>
+<p>
+  Die Web-App unter <a href="https://setlist-organizer-sync.wiskundeknobbel.workers.dev">setlist-organizer-sync.wiskundeknobbel.workers.dev</a>
+  ist ein weiteres Gerät in deinem Konto. Sie merkt sich ihren Zugangsschlüssel im Speicher deines Browsers, setzt keine
+  Cookies und verwendet keine Analyse- oder Werbedienste. Abmelden löscht den Schlüssel dort.
+</p>
+<h3>QR-Code scannen</h3>
+<p>
+  Zum Scannen öffnet die App den Code-Scanner der Google-Play-Dienste. Das Kamerabild verarbeiten die Play-Dienste auf deinem Gerät;
+  die App selbst hat keinen Zugriff auf die Kamera und erhält nur den Inhalt des gescannten Codes.
+</p>
+<h3>Rechtsgrundlage</h3>
+<p>
+  Der Abgleich ist eine Funktion, die du selbst einschaltest; die Verarbeitung dient dazu, sie bereitzustellen
+  (Art. 6 Abs. 1 lit. b DSGVO).
+</p>
+<h3 id="konto-loeschen">Abgleich beenden und Konto löschen</h3>
+<ul>
+  <li><strong>Konto löschen:</strong> In der App unter <em>Mehr → Abgleich zwischen Geräten → Konto löschen</em>. Damit werden
+    sofort alle Inhalte, Geräte und Anmeldungen deines Kontos auf dem Server gelöscht. Die Songs und Setlists auf deinen Geräten
+    bleiben erhalten.</li>
+  <li><strong>Abgleich ausschalten:</strong> meldet dieses Gerät ab. War es das letzte Gerät eines Kontos ohne Google-Anmeldung,
+    wird das Konto samt allen Inhalten gelöscht, denn niemand käme mehr heran.</li>
+  <li><strong>Ohne App:</strong> Schreib uns an <a href="mailto:philippe.nix@gmx.net">philippe.nix@gmx.net</a> mit der E-Mail-Adresse
+    deines Google-Kontos; wir löschen das Konto dann innerhalb von 30 Tagen.</li>
+</ul>
+<p>
+  Gelöschte Daten können noch bis zu 30 Tage in den Sicherungen der Datenbank bei Cloudflare enthalten sein, bevor sie dort
+  endgültig verschwinden.
+</p>
+
+<h2>5. Werbung (Google AdMob) – nur in der kostenlosen Version</h2>
 <p>
   Die kostenlose Version finanziert sich über Werbeanzeigen – ein Banner in den Übersichten und gelegentliche Vollbild-Anzeigen an Pausen, etwa nach dem Beenden eines Auftritts. Dafür nutzen wir
   <strong>Google AdMob</strong> der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland
@@ -116,7 +192,7 @@
   <a href="https://policies.google.com/technologies/partner-sites">Wie Google Daten aus Apps von Partnern nutzt</a>.
 </p>
 
-<h2>5. Kauf von Premium (Google Play)</h2>
+<h2>6. Kauf von Premium (Google Play)</h2>
 <p>
   Premium ist ein Einmalkauf über den Zahlungsdienst von <strong>Google Play</strong>. Die Zahlung wickelt
   Google ab; Zahlungsdaten wie Kreditkartennummern erhalten wir nicht. Google stellt uns zu jedem Kauf
@@ -130,7 +206,7 @@
   <a href="https://play.google/intl/de_de/about/play-terms/">Nutzungsbedingungen von Google Play</a>.
 </p>
 
-<h2>6. Absturz- und Nutzungsstatistiken von Google Play</h2>
+<h2>7. Absturz- und Nutzungsstatistiken von Google Play</h2>
 <p>
   Wenn du in deinen Android-Einstellungen der Weitergabe von Diagnosedaten zugestimmt hast, übermittelt Android
   Google zusammengefasste Informationen über Abstürze und die Leistung von Apps. Wir sehen davon nur zusammengefasste
@@ -138,45 +214,49 @@
   Analyse- oder Tracking-Software.
 </p>
 
-<h2>7. Berechtigungen der App</h2>
+<h2>8. Berechtigungen der App</h2>
 <ul>
-  <li><strong>Internet</strong> – für Werbung und für den Premium-Kauf. Alle übrigen Funktionen arbeiten ohne Internet.</li>
+  <li><strong>Internet</strong> – für Werbung, für den Premium-Kauf und, wenn du ihn einschaltest, für den Abgleich zwischen Geräten. Alle übrigen Funktionen arbeiten ohne Internet.</li>
   <li><strong>Geräte im lokalen Netzwerk</strong> – nur für die Premium-Funktion „Am Desktop tippen“, und nur solange dieser Bildschirm geöffnet ist:
     Die App stellt dann in deinem WLAN eine Eingabeseite bereit, die du am Computer im Browser öffnest. Die Songtexte gehen
     direkt vom Computer an dein Handy; sie laufen weder über unsere noch über fremde Server. Ab Android 17 fragt die App
     dafür nach deiner Erlaubnis.</li>
-  <li><strong>Werbe-ID</strong> – für Werbung (siehe Abschnitt 4).</li>
-  <li><strong>Google-Play-Abrechnung</strong> – für den Premium-Kauf (siehe Abschnitt 5).</li>
+  <li><strong>Werbe-ID</strong> – für Werbung (siehe Abschnitt 5).</li>
+  <li><strong>Google-Play-Abrechnung</strong> – für den Premium-Kauf (siehe Abschnitt 6).</li>
+  <li><strong>Google-Konto</strong> – nur wenn du beim Abgleich „Mit Google anmelden“ wählst (siehe Abschnitt 4).</li>
 </ul>
 <p>
-  Die App greift nicht auf Kontakte, Kamera, Mikrofon oder den genauen Standort zu. Auf Dateien greift sie nur zu,
+  Die App greift nicht auf Kontakte, Kamera, Mikrofon oder den genauen Standort zu; QR-Codes scannt der Code-Scanner der
+  Google-Play-Dienste (Abschnitt 4). Auf Dateien greift sie nur zu,
   wenn du selbst eine Datei auswählst oder mit der App teilst.
 </p>
 
-<h2>8. Kinder</h2>
+<h2>9. Kinder</h2>
 <p>
   Die App richtet sich nicht an Kinder unter 16 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern.
 </p>
 
-<h2>9. Speicherdauer</h2>
+<h2>10. Speicherdauer</h2>
 <p>
   Die auf deinem Gerät gespeicherten Daten bleiben erhalten, bis du sie in der App löschst oder die App deinstallierst.
+  Daten des Abgleichs liegen auf dem Server, solange dein Konto besteht (siehe Abschnitt 4).
   Für Daten, die Google im Rahmen von AdMob und Google Play verarbeitet, gelten die Speicherfristen von Google.
 </p>
 
-<h2>10. Deine Rechte</h2>
+<h2>11. Deine Rechte</h2>
 <p>
   Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und
   Widerspruch sowie das Recht, eine Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen.
-  Da wir selbst keine Daten über dich auf einem Server speichern, betreffen die meisten Anfragen die Verarbeitung durch
-  Google; für diese kannst du dich auch direkt an Google wenden. Schreib uns gerne an die oben genannte E-Mail-Adresse.
+  Auf unserem Server liegen Daten über dich nur, wenn du den Abgleich eingeschaltet hast; darüber geben wir dir gern Auskunft,
+  und löschen kannst du sie selbst (Abschnitt 4). Für die Verarbeitung durch Google kannst du dich auch direkt an Google wenden.
+  Schreib uns gerne an die oben genannte E-Mail-Adresse.
 </p>
 <p>
   Du hast ausserdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren – in der Schweiz beim
   Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB), in der EU bei der Aufsichtsbehörde deines Wohnsitzes.
 </p>
 
-<h2>11. Änderungen</h2>
+<h2>12. Änderungen</h2>
 <p>
   Wenn sich die App oder die rechtlichen Anforderungen ändern, passen wir diese Erklärung an.
   Es gilt jeweils die hier veröffentlichte Fassung.
@@ -188,7 +268,7 @@
 <!-- ======================================================================= -->
 <section id="en" lang="en">
 <h1>Privacy Policy for the “Setlist Organizer” App</h1>
-<p class="meta">Last updated: September 19, 2026</p>
+<p class="meta">Last updated: September 24, 2026</p>
 
 <h2>1. Controller</h2>
 <p>
@@ -201,16 +281,18 @@
 
 <h2>2. Summary</h2>
 <ul>
-  <li>The app has <strong>no user account and no server of its own</strong>. Your songs, lyrics and setlists are stored only on your device. We have no access to them.</li>
+  <li>Unless you choose otherwise, there is <strong>no user account</strong> and your songs, lyrics and setlists stay <strong>only on your device</strong>. We have no access to them.</li>
+  <li>Only if you turn on <strong>sync between devices</strong> (Premium) do we store your songs and setlists on our server, so that they appear on your other devices and in the web app. You can delete your account there at any time.</li>
   <li>The <strong>free version</strong> shows ads via Google AdMob, for which Google processes data from your device. Personalised ads are only shown with your consent.</li>
   <li><strong>Premium purchases</strong> are handled by Google Play. We do not receive payment details.</li>
   <li>With Premium, the advertising library is not started and no data is processed for advertising.</li>
 </ul>
 
-<h2>3. Data that stays on your device</h2>
+<h2>3. Data on your device</h2>
 <p>
   Everything you create in the app – songs, lyrics, chords, setlists, marks – and your settings (e.g. language, font size)
-  are stored locally on your device. The app does not transmit this data to us or to third parties.
+  are stored locally on your device. The app does not transmit this data to us or to third parties – unless you turn on
+  sync between devices (section 4).
 </p>
 <h3>Importing and exporting files</h3>
 <p>
@@ -222,10 +304,78 @@
 <p>
   Android may back up app data to your Google account as part of its automatic backup, if you have enabled this in your
   device settings. This backup is performed by Google and is not accessible to us. You can turn it off in Android’s
-  “Google” or “Backup” settings.
+  “Google” or “Backup” settings. The credentials for sync between devices are excluded from this backup.
 </p>
 
-<h2>4. Advertising (Google AdMob) – free version only</h2>
+<h2 id="sync">4. Sync between devices (optional, Premium)</h2>
+<p>
+  With Premium you can turn on, under <em>More → Sync between devices</em>, that your songs and setlists stay the same on
+  your devices – for example phone and tablet – and that you can edit them in our web app on your computer. As long as you do
+  not turn sync on, nothing described in this section happens.
+</p>
+<h3>What goes to our server</h3>
+<ul>
+  <li><strong>Your content:</strong> songs (title, artist, key, tempo, duration, lyrics with chords, auto-scroll speed),
+    setlists (name, date, venue, sections, songs they contain, marks, stage view settings) and the order of your setlists –
+    plus, for each entry, when it was last changed. Deleted entries remain as an empty marker (just a random identifier, no
+    content) so that your other devices learn about the deletion. The saved zoom and text position per song stay on each device.</li>
+  <li><strong>Your devices:</strong> for each connected device a name (e.g. “Xiaomi 2201116SG” or “Chrome on Windows”), the
+    platform (Android or web), when it was connected and when it last checked in. Each device receives a random access key;
+    the server only keeps a one-way hash of it.</li>
+  <li><strong>If you sign in with Google:</strong> the permanent identifier of your Google account and your email address,
+    if Google has verified it. We do not receive or store your name, profile picture or any other data from your Google account.</li>
+  <li><strong>Connecting by QR code:</strong> a random code valid for five minutes and the name of the new device. Both are
+    deleted as soon as the device is connected; an expired code lapses and is deleted at the next opportunity.</li>
+</ul>
+<p>
+  Data is encrypted in transit (HTTPS). On the server, however, it is <strong>not end-to-end encrypted</strong>: as the
+  operator we could technically see it. We do not do so unless you explicitly ask us to, for example to track down an error.
+  We do not analyse the data, use it for advertising or pass it on.
+</p>
+<h3>Where the data is stored: Cloudflare</h3>
+<p>
+  Our server and database are operated for us by <strong>Cloudflare, Inc.</strong>, 101 Townsend St., San Francisco,
+  CA 94107, USA (“Cloudflare”), as a processor (Cloudflare Workers and D1). The database is located in a data centre in Europe;
+  requests pass through Cloudflare’s global network, which processes your IP address to establish the connection and fend off
+  attacks. We keep no access logs of our own. Cloudflare is certified under the EU-US Data Privacy Framework (and its Swiss
+  extension). More information: <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>.
+</p>
+<h3>Signing in with Google</h3>
+<p>
+  If you choose “Sign in with Google”, Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland) shows the
+  account picker and, after you confirm, sends us a signed confirmation with the details listed above. In the web app, the
+  sign-in page loads a script from Google for this, which gives Google technical data such as your IP address. The
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a> applies.
+</p>
+<h3>Web app</h3>
+<p>
+  The web app at <a href="https://setlist-organizer-sync.wiskundeknobbel.workers.dev">setlist-organizer-sync.wiskundeknobbel.workers.dev</a>
+  is another device in your account. It keeps its access key in your browser’s storage, sets no cookies and uses no analytics
+  or advertising services. Signing out removes the key there.
+</p>
+<h3>Scanning QR codes</h3>
+<p>
+  To scan, the app opens the code scanner of Google Play services. The camera image is processed by Play services on your device;
+  the app itself has no access to the camera and only receives the content of the scanned code.
+</p>
+<h3>Legal basis</h3>
+<p>
+  Sync is a feature you turn on yourself; the processing serves to provide it (Art. 6(1)(b) GDPR).
+</p>
+<h3 id="delete-account">Stopping sync and deleting your account</h3>
+<ul>
+  <li><strong>Delete account:</strong> in the app under <em>More → Sync between devices → Delete account</em>. This immediately
+    deletes all content, devices and sign-ins of your account on the server. The songs and setlists on your devices are kept.</li>
+  <li><strong>Turn off sync:</strong> signs this device out. If it was the last device of an account without Google sign-in,
+    the account and all its content are deleted, since nobody could reach it anymore.</li>
+  <li><strong>Without the app:</strong> email us at <a href="mailto:philippe.nix@gmx.net">philippe.nix@gmx.net</a> with the email
+    address of your Google account; we will delete the account within 30 days.</li>
+</ul>
+<p>
+  Deleted data may remain in Cloudflare’s database backups for up to 30 days before it is gone for good.
+</p>
+
+<h2>5. Advertising (Google AdMob) – free version only</h2>
 <p>
   The free version is funded by ads – a banner in the overview screens and occasional full-screen ads at natural breaks, for example after ending a performance. We use <strong>Google AdMob</strong> by Google Ireland Limited, Gordon House,
   Barrow Street, Dublin 4, Ireland (“Google”).
@@ -263,7 +413,7 @@
   <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.
 </p>
 
-<h2>5. Premium purchase (Google Play)</h2>
+<h2>6. Premium purchase (Google Play)</h2>
 <p>
   Premium is a one-time purchase through <strong>Google Play</strong> billing. Payment is handled by Google; we do not receive
   payment details such as card numbers. Google provides us with order information for each purchase (e.g. order number,
@@ -276,49 +426,53 @@
   <a href="https://play.google/intl/en_us/about/play-terms/">Google Play Terms of Service</a> also apply.
 </p>
 
-<h2>6. Crash and usage statistics from Google Play</h2>
+<h2>7. Crash and usage statistics from Google Play</h2>
 <p>
   If you have agreed in your Android settings to share diagnostic data, Android sends Google aggregated information about app
   crashes and performance. We only see aggregated reports in the Google Play Console, not linked to individuals. The app
   itself contains no analytics or tracking software of its own.
 </p>
 
-<h2>7. App permissions</h2>
+<h2>8. App permissions</h2>
 <ul>
-  <li><strong>Internet</strong> – for ads and for the Premium purchase. All other features work offline.</li>
+  <li><strong>Internet</strong> – for ads, for the Premium purchase and, if you turn it on, for sync between devices. All other features work offline.</li>
   <li><strong>Devices on the local network</strong> – only for the Premium feature “Type on your computer”, and only while that screen
     is open: the app then serves an input page on your Wi-Fi that you open in your computer’s browser. The lyrics go straight
     from your computer to your phone; they do not pass through our servers or anyone else’s. On Android 17 and later the app
     asks for your permission first.</li>
-  <li><strong>Advertising ID</strong> – for ads (see section 4).</li>
-  <li><strong>Google Play Billing</strong> – for the Premium purchase (see section 5).</li>
+  <li><strong>Advertising ID</strong> – for ads (see section 5).</li>
+  <li><strong>Google Play Billing</strong> – for the Premium purchase (see section 6).</li>
+  <li><strong>Google account</strong> – only if you choose “Sign in with Google” for sync (see section 4).</li>
 </ul>
 <p>
-  The app does not access your contacts, camera, microphone or precise location. It only accesses files that you select or
+  The app does not access your contacts, camera, microphone or precise location; QR codes are scanned by the code scanner of
+  Google Play services (section 4). It only accesses files that you select or
   share with the app yourself.
 </p>
 
-<h2>8. Children</h2>
+<h2>9. Children</h2>
 <p>The app is not directed at children under 16. We do not knowingly collect personal data from children.</p>
 
-<h2>9. Retention</h2>
+<h2>10. Retention</h2>
 <p>
-  Data stored on your device remains there until you delete it in the app or uninstall the app. Data processed by Google in
+  Data stored on your device remains there until you delete it in the app or uninstall the app. Sync data stays on the
+  server as long as your account exists (see section 4). Data processed by Google in
   connection with AdMob and Google Play is subject to Google’s retention periods.
 </p>
 
-<h2>10. Your rights</h2>
+<h2>11. Your rights</h2>
 <p>
   You have the right to access, rectification, erasure, restriction of processing, data portability and objection, and to
-  withdraw consent at any time with effect for the future. As we do not store any data about you on a server, most requests
-  concern processing by Google; you can also contact Google directly. Feel free to write to us at the email address above.
+  withdraw consent at any time with effect for the future. We only hold data about you on our server if you have turned on
+  sync; we are happy to tell you about it, and you can delete it yourself (section 4). For processing by Google you can also
+  contact Google directly. Feel free to write to us at the email address above.
 </p>
 <p>
   You also have the right to lodge a complaint with a data protection authority – in Switzerland the Federal Data Protection
   and Information Commissioner (FDPIC), in the EU the authority in your country of residence.
 </p>
 
-<h2>11. Changes</h2>
+<h2>12. Changes</h2>
 <p>
   We will update this policy if the app or legal requirements change. The version published here applies.
 </p>
